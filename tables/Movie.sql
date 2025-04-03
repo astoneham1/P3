@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS `Movie` (
+  `MovieID` INTEGER PRIMARY KEY AUTOINCREMENT,
+  `title` VARCHAR(50) NOT NULL,
+  `genre` VARCHAR(20) NOT NULL,
+  `plot` VARCHAR(100) NOT NULL,
+  `runtime` INTEGER NOT NULL,
+  `year` VARCHAR(4) NOT NULL,
+  `RTrating` VARCHAR(2) NOT NULL,
+  `IMDBrating` REAL NOT NULL,
+  `age` VARCHAR(3) NOT NULL,
+  `DirectorID` INTEGER NOT NULL,
+  FOREIGN KEY (`DirectorID`) REFERENCES `Director`(`DirectorID`)
+);

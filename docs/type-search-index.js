@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"InitialiseDB"},{"p":"<Unnamed>","l":"PopulateDB"},{"p":"<Unnamed>","l":"QueryDB"}];updateSearchResults();

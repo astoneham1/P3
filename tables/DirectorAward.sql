@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `DirectorAward` (
+  `AwardID` INTEGER PRIMARY KEY AUTOINCREMENT,
+  `body` VARCHAR(30) NOT NULL,
+  `AwardName` VARCHAR(50) NOT NULL,
+  `year` VARCHAR(4) NOT NULL,
+  `DirectorID` INTEGER,
+  FOREIGN KEY (`DirectorID`) REFERENCES `Director`(`DirectorID`)
+);
