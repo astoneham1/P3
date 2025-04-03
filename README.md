@@ -1,10 +1,10 @@
 ## INFORMATION
-Java files and classes can be found in src/
+<p>Java files and classes can be found in src/
 DDL files can be found in tables/
 CSV files can be found in data/
 JAR files can be found in libs/
 Javadoc documentation can be found in docs/index.html
-The database is called 'database.db'
+The database is called 'database.db'</p>
 
 ### These commands assume a terminal is opened in the P3 directory
 
