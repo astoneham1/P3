@@ -10,7 +10,7 @@ import java.util.Arrays;
  * additional parameters to execute specific queries.
  */
 public class QueryDB {
-    public static final String DB_PATH = "database.db";
+    public static final String DB_PATH = "databases/database.db";
 
     /**
      * Main method that processes command-line arguments and executes the

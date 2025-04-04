@@ -9,7 +9,7 @@ import java.util.Arrays;
  * and ensures the data is inserted correctly.
  */
 public class PopulateDB {
-    public static final String DB_PATH = "database.db";
+    public static final String DB_PATH = "databases/database.db";
     public static final String DATA_DIR = "data";
 
     /**

@@ -10,7 +10,7 @@ import java.sql.*;
  * and ensures that tables are successfully created.
  */
 public class InitialiseDB {
-    public static final String DB_PATH = "database.db";
+    public static final String DB_PATH = "databases/database.db";
     public static final String SCHEMA_DIR = "tables";
 
     /**
