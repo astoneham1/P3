@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"InitialiseDB"},{"p":"<Unnamed>","l":"PopulateDB"},{"p":"<Unnamed>","l":"QueryDB"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"src","l":"InitialiseDB"},{"p":"src","l":"PopulateDB"},{"p":"src","l":"QueryDB"}];updateSearchResults();
