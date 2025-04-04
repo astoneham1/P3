@@ -1,13 +1,13 @@
 package src;
+
 import java.sql.*;
 import java.util.Arrays;
 
 /**
- * QueryDB is a command-line Java program that connects to an SQLite database
+ * QueryDB is a Java program that connects to an SQLite database
  * and executes predefined SQL queries based on user input.
  * The program accepts a query number (1-6) as a command-line argument and, if
- * required,
- * additional parameters to execute specific queries.
+ * required, additional parameters to execute specific queries.
  */
 public class QueryDB {
     public static final String DB_PATH = "databases/database.db";
@@ -39,7 +39,7 @@ public class QueryDB {
                         throwArgsMessage(2, "'movie title'");
                         break;
                     }
-                    String movieTitle = String.join(" ", Arrays.copyOfRange(args, 1, args.length));
+                    String movieTitle = String.join(" ", Arrays.copyOfRange(args, 1, args.length)); // incase user forgets quotes, there is only one more arg so we can join the rest of them
                     executeQuery(
                             "SELECT A.FirstName, A.LastName FROM Actor A JOIN Cast C ON A.ActorID = C.ActorID JOIN Movie M ON C.MovieID = M.MovieID WHERE M.title = '"
                                     + movieTitle + "';",
@@ -69,7 +69,7 @@ public class QueryDB {
                     break;
                 case "5":
                     executeQuery(
-                            "SELECT A.FirstName, A.LastName, M.title FROM Actor A JOIN ActorAward AA ON A.ActorID = AA.ActorID JOIN Cast C ON A.ActorID = C.ActorID JOIN Movie M ON C.MovieID = M.MovieID;",
+                            "SELECT DISTINCT A.FirstName, A.LastName, M.title FROM Actor A JOIN ActorAward AA ON A.ActorID = AA.ActorID JOIN Cast C ON A.ActorID = C.ActorID JOIN Movie M ON C.MovieID = M.MovieID;",
                             connection);
                     break;
                 case "6":

@@ -1,4 +1,5 @@
 package src;
+
 import java.sql.*;
 import java.io.*;
 import java.util.Arrays;
@@ -76,10 +77,6 @@ public class PopulateDB {
 
             ResultSetMetaData metaData = rs.getMetaData();
             int columnCount = metaData.getColumnCount();
-
-            if (columnCount <= 1) {
-                throw new SQLException("Table " + tableName + " must have more than one column.");
-            }
 
             // build column names and placeholders, handling "Cast" table differently as we
             // want to insert the first column
